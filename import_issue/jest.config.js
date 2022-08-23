@@ -2,21 +2,21 @@
 console.log('load config');
 
 const config = {
-	"extensionsToTreatAsEsm": [
-		".ts",
-		".esm.js"
+	extensionsToTreatAsEsm: [
+		'.ts',
+		'.esm.js'
 	],
-	"cacheDirectory": "<rootDir>../../cache/jest",
-	"transformIgnorePatterns": [
-		"node_modules/(?!.*?\\.esm\\.js$|.*?\\.mjs$)"
+	cacheDirectory: '<rootDir>../../cache/jest',
+	transformIgnorePatterns: [
+		'node_modules/(?!.*?\\.esm\\.js$|.*?\\.mjs$)'
 	],
-	"testPathIgnorePatterns": [
-		"node_modules/(?!.*?\\.esm\\.js$|.*?\\.mjs$)",
-		"<rootDir>/node_modules/"
+	testPathIgnorePatterns: [
+		'node_modules/(?!.*?\\.esm\\.js$|.*?\\.mjs$)',
+		'<rootDir>/node_modules/'
 	],
-	"testRegex": ".test.ts$",
-	"transform": {
-		"^.+\\.(t|j)s$": ["@swc/jest", {
+	testRegex: '.test.ts$',
+	transform: {
+		'^.+\\.(t|j)s$': ['@swc/jest', {
 			jsc: {
 				parser: {
 					syntax: 'typescript',
@@ -32,7 +32,7 @@ const config = {
 			}
 		}]
 	},
-	"testEnvironment": "node"
+	testEnvironment: 'node'
 };
 
 module.exports = config;
